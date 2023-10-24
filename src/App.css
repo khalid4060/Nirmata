@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Cricketer List Container */
+.cricketer-list-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Filter Section */
+  .filter-section {
+    margin-bottom: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Apply CSS for the selected filter */
+  .filter-section select.selected {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
   }
-}
+  
+  /* Search Section */
+  .search-section {
+    margin-bottom: 10px;
+  }
+  
+  /* Apply CSS for the search input */
+  .search-section input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  /* Cricketer Table */
+  .cricketer-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cricketer-table th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .cricketer-table th:hover {
+    cursor: pointer;
+  }
+  
+  .cricketer-table th, .cricketer-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 230px;
+  }
+  .cricketer-table a{
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .cricketer-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Pagination */
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Apply CSS for the selected pagination button */
+  .pagination button.selected {
+    background-color: #0056b3;
+  }
+ /* AboutCricketer.css */
+.about-cricketer-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-cricketer-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .about-cricketer-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .about-cricketer-container strong {
+    font-weight: bold;
+  }
+  
+  /* Center text if cricketer is not found */
+  .cricketer-not-found {
+    text-align: center;
+    font-size: 18px;
+    color: #d9534f; /* Red color for error message */
+  }
+  
+  /* Link styles */
+  .about-cricketer-container a {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+  }
+  
+  .about-cricketer-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Custom styles for specific elements, for example, you can style the Date of Birth differently */
+  .about-cricketer-container p strong {
+    color: #333;
+  }
+  
+  .about-cricketer-container p em {
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Adjust padding and margins for better spacing */
+  .about-cricketer-container p {
+    margin-bottom: 15px;
+  }
+  
+  /* Add a border at the bottom of the container */
+  .about-cricketer-container {
+    border-bottom: 2px solid #007bff; /* Blue border at the bottom */
+  }
+  
+  /* Center the link at the bottom */
+  .about-cricketer-container .back-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .similar-players {
+    margin-top: 20px;
+  }
+  
+  .similar-players h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .similar-players ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .similar-players li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .similar-players li strong {
+    font-weight: bold;
+  }  
